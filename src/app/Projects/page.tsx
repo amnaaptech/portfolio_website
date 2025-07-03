@@ -9,7 +9,7 @@ const allProjects = [
     title: 'Portfolio Website',
     description: 'Developed a responsive developer portfolio using Next.js and Tailwind CSS to showcase projects, skills, and contact information.',
     tags: ['Tailwind CSS','Nextjs'],
-    image: '/img/portfolio.png',
+    image: '/img/portfolio.PNG',
     github: 'https://github.com/amnaaptech/portfolio_website',
   },
   {
@@ -33,7 +33,7 @@ const allProjects = [
     title: 'Arts',
     description: 'Developed an e-commerce website for a stationery and gift store using ASP.NET Core MVC with role-based access, product management, and order placement features.using C#,ASP.NET Core (MVC)',
     tags: ['SQL Server', 'ASP.NET','C#'],
-    image: '/img/Arts.png',
+    image: '/img/Arts.PNG',
     github: 'https://github.com/amnaaptech/OnlineShoppingCart_asp.net',
   },
    {
@@ -49,7 +49,7 @@ const allProjects = [
     title: 'Admin Panel',
     description: 'Developed an admin panel using PHP and MySQL with user role management for secure access control and CRUD operations.',
     tags: ['PHP', 'MySQL'],
-    image: '/img/Admin2.png',
+    image: '/img/Admin2.PNG',
     github: 'https://github.com/amnaaptech/Elegance_Salon/tree/main/Admin%20Dashboard',
   },
   {
@@ -66,7 +66,7 @@ const allProjects = [
     title: 'Admin Panel',
     description: 'Admin panel using Nextjs ,and Tailwindcss.',
     tags: ['Nextjs', 'TypeScript','Tailwind CSS'],
-    image: '/img/Adminnext1.png',
+    image: '/img/Adminnext1.PNG',
     github: 'https://github.com/amnaaptech/admin-dashboard',
   },
 ]

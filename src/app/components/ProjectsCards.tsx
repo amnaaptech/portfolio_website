@@ -18,12 +18,12 @@ const ProjectCard = () => {
     {
       title: 'Portfolio Website',
       desc: 'A fully animated portfolio made with Framer Motion and Tailwind CSS.',
-      image: '/img/portfolio.png',
+      image: '/img/portfolio.PNG',
       live: 'https://amnaaptech-portfolio.vercel.app/',
     },
    {
   title: 'CarBreezy Website',
-  desc: 'A static responsive car showroom website built using HTML and Bootstrap.',
+  desc: 'A static responsive car showroom website built using HTML,CSS,JS and Bootstrap.',
   image: '/img/Carbreezy.png',
   live: 'https://amnaaptech.github.io/', // Add link if deployed
 }, 
