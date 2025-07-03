@@ -6,19 +6,20 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
-  FaReact,
   FaPhp,
   FaGitAlt,
   FaCode,
   FaLaravel,
   FaBootstrap,
   FaAngular,
+  FaDatabase
 } from 'react-icons/fa'
 import {
   SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
   SiMysql,
+  SiDotnet, // 👈 Add this line
 } from 'react-icons/si'
 
 const skills = [
@@ -32,6 +33,8 @@ const skills = [
   { name: 'PHP', icon: <FaPhp className="text-purple-400" /> },
   { name: 'Laravel', icon: <FaLaravel className="text-red-500" /> },
   { name: 'C#', icon: <FaCode className="text-purple-600" /> },
+  { name: 'ASP.NET Core', icon: <SiDotnet className="text-indigo-400" /> },
+  { name: 'SQL Server', icon: <FaDatabase className="text-red-500" /> },
   { name: 'MySQL', icon: <SiMysql className="text-blue-300" /> },
   { name: 'Git', icon: <FaGitAlt className="text-red-500" /> },
   { name: 'Angular', icon: <FaAngular className="text-red-600" /> },

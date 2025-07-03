@@ -44,15 +44,16 @@ const About = () => {
           className="text-gray-300 space-y-4 text-lg"
         >
           <p>
-            Hi! I'm <span className="text-pink-400 font-semibold">Amna</span>, a passionate web developer from Karachi, Pakistan.
+            Hi! I&apos;m <span className="text-pink-400 font-semibold">Amna</span>, a passionate web developer from Karachi, Pakistan.
             I specialize in building dynamic and responsive websites using technologies like PHP, .NET, and React.
           </p>
           <p>
-            I love solving problems, creating beautiful UIs, and learning new tools & frameworks. Whether it's a custom admin panel or an interactive portfolio —
-            I enjoy turning ideas into real-world digital products.
-          </p>
+  I love solving problems, creating beautiful UIs, and learning new tools &amp; frameworks. Whether it&apos;s a custom admin panel or an interactive portfolio — 
+  I enjoy turning ideas into real-world digital products.
+</p>
+
           <p>
-            Currently, I’m focused on sharpening my frontend skills with Next.js and TypeScript, and building creative web projects.
+            Currently, I&apos;m focused on sharpening my frontend skills with Next.js and TypeScript, and building creative web projects.
           </p>
         </motion.div>
       </div>
