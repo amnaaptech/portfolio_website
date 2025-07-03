@@ -1,19 +1,33 @@
 
 
+
 // 'use client'
 
 // import { motion } from 'framer-motion'
 // import Image from 'next/image'
 // import React from 'react'
-// import Typewriter from 'typewriter-effect'
+// import Typewriter, { Options } from 'typewriter-effect'
 
 // const Hero = () => {
+//   const typewriterOptions = {
+//   strings: [
+//     `<span style="color: #a78bfa">PHP Developer</span>`,
+//     `<span style="color: #d9a7c7">Dot Net Developer</span>`,
+//     `<span style="color: #ffdde1">Frontend Enthusiast</span>`,
+//   ],
+//   autoStart: true,
+//   loop: true,
+//   delay: 75,
+//   deleteSpeed: 50,
+//   html: true,
+// } as unknown as Options
+
 //   return (
 //     <section
 //       id="hero"
 //       className="relative min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between gap-x-2 md:gap-x-5 px-6 md:px-16 pt-2 md:pt-4 pb-6 md:pb-8 text-white"
 //     >
-//       {/* 🔆 Background Glow (keep this if you want glow only) */}
+//       {/* 🔆 Background Glow */}
 //       <div className="absolute -z-10 w-[500px] h-[500px] bg-pink-500 rounded-full blur-[120px] opacity-20 top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/2" />
 
 //       {/* 👩 Left: Intro */}
@@ -24,7 +38,7 @@
 //           transition={{ duration: 0.8 }}
 //           className="text-4xl md:text-6xl font-extrabold text-pink-500 drop-shadow-[0_2px_6px_rgba(236,72,153,0.6)]"
 //         >
-//         Hi, I&apos;m Amna
+//           Hi, I&apos;m Amna
 //         </motion.h1>
 
 //         <motion.div
@@ -33,20 +47,7 @@
 //           transition={{ delay: 0.5 }}
 //           className="text-2xl md:text-3xl font-medium"
 //         >
-//           <Typewriter
-//             options={{
-//               strings: [
-//                 `<span style="color: #a78bfa">PHP Developer</span>`,
-//                 `<span style="color: #d9a7c7">Dot Net Developer</span>`,
-//                 `<span style="color: #ffdde1">Frontend Enthusiast</span>`,
-//               ],
-//               autoStart: true,
-//               loop: true,
-//               delay: 75,
-//               deleteSpeed: 50,
-//               html: true,
-//             } as any}
-//           />
+//           <Typewriter options={typewriterOptions} />
 //         </motion.div>
 
 //         <motion.div
@@ -54,7 +55,7 @@
 //           className="flex justify-center md:justify-start"
 //         >
 //           <a
-//             href="/img/Amna_CV.pdf"
+//             href="/img/Amnacv.pdf"
 //             download
 //             className="mt-3 px-6 py-3 bg-pink-600 text-white font-semibold rounded-full shadow-lg shadow-pink-500/40 hover:bg-pink-500 transition duration-300"
 //           >
@@ -70,22 +71,21 @@
 //         animate={{ opacity: 1, scale: 1 }}
 //         transition={{ duration: 0.5 }}
 //       >
- 
-
 //         <Image
-//   src="/img/amna.png"
-//   alt="Amna"
-//   width={320}
-//   height={320}
-//   className="rounded-full object-cover border-4 border-pink-500 shadow-lg shadow-pink-500/40 w-[270px] h-[270px] md:w-[340px] md:h-[340px]"
-// />
-
+//           src="/img/amna.png"
+//           alt="Amna"
+//           width={320}
+//           height={320}
+//           className="rounded-full object-cover border-4 border-pink-500 shadow-lg shadow-pink-500/40 w-[270px] h-[270px] md:w-[340px] md:h-[340px]"
+//         />
 //       </motion.div>
 //     </section>
 //   )
 // }
 
 // export default Hero
+
+
 
 'use client'
 
@@ -95,39 +95,29 @@ import React from 'react'
 import Typewriter, { Options } from 'typewriter-effect'
 
 const Hero = () => {
-  // const typewriterOptions: Options = {
-  //   strings: [
-  //     `<span style="color: #a78bfa">PHP Developer</span>`,
-  //     `<span style="color: #d9a7c7">Dot Net Developer</span>`,
-  //     `<span style="color: #ffdde1">Frontend Enthusiast</span>`,
-  //   ],
-  //   autoStart: true,
-  //   loop: true,
-  //   delay: 75,
-  //   deleteSpeed: 50,
-  //   html: true,
-  // }
-
   const typewriterOptions = {
-  strings: [
-    `<span style="color: #a78bfa">PHP Developer</span>`,
-    `<span style="color: #d9a7c7">Dot Net Developer</span>`,
-    `<span style="color: #ffdde1">Frontend Enthusiast</span>`,
-  ],
-  autoStart: true,
-  loop: true,
-  delay: 75,
-  deleteSpeed: 50,
-  html: true,
-} as unknown as Options
+    strings: [
+      `<span style="color: #a78bfa">PHP Developer</span>`,
+      `<span style="color: #d9a7c7">Dot Net Developer</span>`,
+      `<span style="color: #ffdde1">Frontend Enthusiast</span>`,
+    ],
+    autoStart: true,
+    loop: true,
+    delay: 75,
+    deleteSpeed: 50,
+    html: true,
+  } as unknown as Options
 
   return (
     <section
       id="hero"
       className="relative min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between gap-x-2 md:gap-x-5 px-6 md:px-16 pt-2 md:pt-4 pb-6 md:pb-8 text-white"
     >
-      {/* 🔆 Background Glow */}
-      <div className="absolute -z-10 w-[500px] h-[500px] bg-pink-500 rounded-full blur-[120px] opacity-20 top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/2" />
+      {/* 🔆 Responsive Background Glow */}
+      <div
+        className="absolute -z-10 w-[500px] h-[500px] bg-pink-500 rounded-full blur-[120px] opacity-20
+        top-1/4 left-1/2 md:top-1/3 md:left-1/4 transform -translate-x-1/2 -translate-y-1/2"
+      />
 
       {/* 👩 Left: Intro */}
       <div className="flex-1 space-y-5 text-center md:text-left">

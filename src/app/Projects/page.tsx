@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const allProjects = [
   {
@@ -139,6 +140,9 @@ const Projects = () => {
           </motion.div>
         ))}
       </div>
+      <Link href="/" className="text-pink-500 hover:underline">
+  Go Back Home
+</Link>
     </section>
   )
 }
