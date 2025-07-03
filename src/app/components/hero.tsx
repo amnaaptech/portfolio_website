@@ -114,10 +114,16 @@ const Hero = () => {
       className="relative min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between gap-x-2 md:gap-x-5 px-6 md:px-16 pt-2 md:pt-4 pb-6 md:pb-8 text-white"
     >
       {/* 🔆 Responsive Background Glow */}
-      <div
+      {/* <div
         className="absolute -z-10 w-[500px] h-[500px] bg-pink-500 rounded-full blur-[120px] opacity-20
         top-1/4 left-1/2 md:top-1/3 md:left-1/4 transform -translate-x-1/2 -translate-y-1/2"
-      />
+      /> */}
+      <div
+  className="absolute -z-10 w-[400px] h-[400px] md:w-[500px] md:h-[500px]
+  bg-pink-500 rounded-full blur-[160px] md:blur-[140px] opacity-30 
+  top-1/4 left-1/2 md:top-1/3 md:left-1/4 transform -translate-x-1/2 -translate-y-1/2"
+/>
+
 
       {/* 👩 Left: Intro */}
       <div className="flex-1 space-y-5 text-center md:text-left">
