@@ -118,11 +118,18 @@ const Hero = () => {
         className="absolute -z-10 w-[500px] h-[500px] bg-pink-500 rounded-full blur-[120px] opacity-20
         top-1/4 left-1/2 md:top-1/3 md:left-1/4 transform -translate-x-1/2 -translate-y-1/2"
       /> */}
-      <div
-  className="absolute -z-10 w-[400px] h-[400px] md:w-[500px] md:h-[500px]
-  bg-pink-500 rounded-full blur-[160px] md:blur-[140px] opacity-30 
-  top-1/4 left-1/2 md:top-1/3 md:left-1/4 transform -translate-x-1/2 -translate-y-1/2"
+  {/* ✅ Perfect Background Glow — Responsive */}
+<div
+  className="absolute -z-10 
+    w-[400px] h-[400px] md:w-[500px] md:h-[500px] 
+    bg-pink-500 rounded-full 
+    blur-[150px] md:blur-[140px] 
+    opacity-30 
+    shadow-[0_0_100px_40px_rgba(236,72,153,0.25)] 
+    top-1/2 left-1/2 md:top-[35%] md:left-[30%] 
+    -translate-x-1/2 -translate-y-1/2"
 />
+
 
 
       {/* 👩 Left: Intro */}
