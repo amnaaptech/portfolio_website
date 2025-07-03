@@ -154,7 +154,7 @@ const Hero = () => {
           className="flex justify-center md:justify-start"
         >
           <a
-            href="/img/Amna_CV.pdf"
+            href="/img/Amnacv.pdf"
             download
             className="mt-3 px-6 py-3 bg-pink-600 text-white font-semibold rounded-full shadow-lg shadow-pink-500/40 hover:bg-pink-500 transition duration-300"
           >
