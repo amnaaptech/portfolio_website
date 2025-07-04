@@ -120,9 +120,7 @@ const Hero = () => {
           sm:w-[520px] sm:h-[520px] 
           bg-pink-500 rounded-full 
           blur-[160px] 
-          opacity-70
- 
-           
+          opacity-40
           shadow-[0_0_100px_40px_rgba(236,72,153,0.3)] 
           top-1/2 left-1/2 md:top-[35%] md:left-[30%] 
           -translate-x-1/2 -translate-y-1/2"
