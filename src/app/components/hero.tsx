@@ -161,20 +161,45 @@ const Hero = () => {
       </div>
 
       {/* 👧 Right: Profile Image */}
-      <motion.div
-        className="flex-1 flex justify-center mt-5 md:mt-0"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Image
-          src="/img/amna.png"
-          alt="Amna"
-          width={320}
-          height={320}
-          className="rounded-full object-cover border-4 border-pink-500 shadow-lg shadow-pink-500/40 w-[270px] h-[270px] md:w-[340px] md:h-[340px]"
-        />
-      </motion.div>
+<motion.div
+  className="flex-1 flex justify-center mt-5 md:mt-0 relative"
+  // initial={{ opacity: 0, scale: 0.9 }}
+  animate={{
+    opacity: 1,
+    scale: 1,
+    y: [0, -20, 0, 20, 0]
+  }}
+  transition={{
+    duration: 6,
+    repeat: Infinity,
+    ease: "linear"
+  }}
+>
+  {/* 🔴 Animated Glowing Shadow */}
+  <motion.div
+    className="absolute bottom-0 w-56 h-5 rounded-full bg-pink-500 blur-2xl opacity-40 z-0"
+    animate={{
+      opacity: [0.2, 0.4, 0.2],
+      scale: [1, 1.1, 1],
+    }}
+    transition={{
+      duration: 3,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }}
+  />
+
+  {/* 👧 Floating Image */}
+  <Image
+    src="/img/amna.png"
+    alt="Amna"
+    width={320}
+    height={320}
+    className="relative z-10 rounded-full object-cover border-4 border-pink-500 shadow-lg shadow-pink-500/40 w-[270px] h-[270px] md:w-[340px] md:h-[340px]"
+  />
+</motion.div>
+
+
     </section>
   )
 }
