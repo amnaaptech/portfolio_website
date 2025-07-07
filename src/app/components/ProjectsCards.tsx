@@ -48,8 +48,11 @@ const ProjectCard = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.03 }}
+             initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
             className="relative z-10 w-full sm:w-[80%] md:w-[320px] rounded-xl bg-gradient-to-br from-[#1a1a1a] via-[#0f0f0f] to-black text-white border border-gray-800 overflow-hidden shadow-lg hover:shadow-pink-500/20 transition-shadow duration-300"
           >
             <Image

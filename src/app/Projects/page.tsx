@@ -153,11 +153,12 @@
 
 //new code
 'use client'
+
 import { Github, Linkedin } from 'lucide-react'
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
 
 const allProjects = [
   {
@@ -260,8 +261,11 @@ const Projects = () => {
         {filteredProjects.map(project => (
           <motion.div
             key={project.id}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            whileHover={{ scale: 1.03 }}
+            //  initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}        
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.4, delay: project.id * 0.1 }}
             className="bg-[#1a1a1a] p-4 rounded-xl shadow-lg border border-gray-800 hover:shadow-pink-500/30 transition"
           >
             <img
@@ -293,14 +297,7 @@ const Projects = () => {
                   View Code
                 </a>
               )}
-              {/* <div className="flex gap-3 text-xl text-gray-400">
-                <a href="https://github.com/amnaaptech" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
-                  <FaGithub />
-                </a>
-                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
-                  <FaLinkedin />
-                </a>
-              </div> */}
+             
                 <div className="flex gap-3">
                   <a
                     href="https://github.com/amnaaptech"
@@ -324,11 +321,24 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="text-center mt-10">
-        <Link href="/" className="text-pink-500 hover:underline">
-          Go Back Home
-        </Link>
-      </div>
+      <div className="text-center mt-12">
+  <Link
+    href="/"
+    className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-600 hover:bg-pink-500 text-white font-medium shadow-md shadow-pink-500/30 transition-all duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-5 w-5"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+    </svg>
+    Go Back Home
+  </Link>
+</div>
+
     </section>
   )
 }
